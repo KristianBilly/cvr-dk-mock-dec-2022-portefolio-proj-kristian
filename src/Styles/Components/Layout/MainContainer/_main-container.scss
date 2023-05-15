@@ -1,0 +1,11 @@
+.main-container {
+  @include flex-col-gap-1rem;
+  align-items: center;
+  min-height: 80vh;
+  padding-top: 4rem;
+  transition: $transition;
+}
+
+.main-container-showlinks {
+  padding: 8rem;
+}

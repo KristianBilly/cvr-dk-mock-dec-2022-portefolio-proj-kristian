@@ -1,0 +1,20 @@
+.theme-wrapper {
+  color: var(--theme-font-and-border);
+  background-color: var(--theme-background);
+  border-color: var(--theme-font-and-border);
+  transition: $transition;
+}
+
+.light-theme {
+  --theme-background: #fff;
+  --theme-font-and-border: #282c35;
+  --theme-border-shadow: 0 0 0.6rem 0 #888888;
+  --theme-hover-color: rgb(101, 167, 189);
+}
+
+.dark-theme {
+  --theme-background: #282c35;
+  --theme-font-and-border: #fff;
+  --theme-border-shadow: 0 0 0.6rem 0 #dadada;
+  --theme-hover-color: rgb(131, 185, 203);
+}

@@ -1,0 +1,19 @@
+.form-container {
+  @include flex-col-gap-1rem;
+  padding: 1rem;
+
+  .form-control {
+    @include flex-col-gap-1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .submit-btn {
+    @include button;
+    display: inline-block;
+    margin-top: 0;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+  }
+}

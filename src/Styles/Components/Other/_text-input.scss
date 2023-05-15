@@ -1,0 +1,7 @@
+.text-input {
+  @include inherits-for-theme;
+  border: $border;
+  width: $fullInputWidth;
+  outline: 0;
+  padding: $paddingSmallInput;
+}

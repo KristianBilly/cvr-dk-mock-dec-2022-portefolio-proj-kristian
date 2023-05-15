@@ -1,0 +1,39 @@
+.placeholder-wrapper {
+  @include center-component;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include breakpoint-md-down {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .placeholder-col-3,
+  .placeholder-col-2,
+  .placeholder-col-1 {
+    @include component-container;
+
+    h3 {
+      justify-content: right;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .placeholder-col-3 {
+    flex: 0 0 calc(33.33% - 1rem);
+
+    @include breakpoint-md-down {
+      flex: 0 0 1;
+    }
+  }
+
+  .placeholder-col-2 {
+    flex: 0 0 calc(50% - 1rem);
+
+    @include breakpoint-md-down {
+      flex: 0 0 1;
+    }
+  }
+}

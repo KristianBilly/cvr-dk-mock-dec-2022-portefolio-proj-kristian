@@ -1,0 +1,94 @@
+.search {
+  @include component-container;
+
+  .search-container {
+    width: 100%;
+  }
+
+  .search-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .search-no-results {
+    .user-hint-link {
+      @include link;
+      font-weight: $font-weight-bold;
+    }
+
+    .message-title {
+      margin: 0.75rem 0;
+    }
+  }
+
+  .search-input {
+    padding: 1.1rem;
+  }
+
+  .search-company {
+    @include inherits-for-theme;
+    text-decoration: none;
+
+    .search-article {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 2rem 0;
+      border: $border;
+      padding: 1.5rem;
+
+      @include breakpoint-md-down {
+        flex-direction: column;
+      }
+    }
+
+    .search-content {
+      flex: 0 0 calc(25% - 1rem);
+
+      @include breakpoint-xmd-down {
+        flex: 0 0 calc(50% - 1rem);
+      }
+
+      @include breakpoint-md-down {
+        flex: 0 0 1;
+      }
+    }
+  }
+
+  .stats-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .search-statistics {
+    line-height: 1.5rem;
+    border: $border;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 2rem 0;
+
+    .stats-container {
+      margin-bottom: 1.25rem;
+      display: flex;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include breakpoint-sm-down {
+        display: block;
+      }
+    }
+
+    .stats-title {
+      font-weight: $font-weight-bold;
+      flex: 0 0 400px;
+
+      @include breakpoint-sm-down {
+        flex: 0 0 1;
+      }
+    }
+  }
+}

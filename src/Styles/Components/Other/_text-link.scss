@@ -1,0 +1,9 @@
+.text-link {
+  @include link;
+}
+
+.text-link-virkdk {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: $font-weight-bold;
+}

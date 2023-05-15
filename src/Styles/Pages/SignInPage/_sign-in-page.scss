@@ -1,0 +1,9 @@
+.sign-in-page {
+  @include component-container;
+  align-items: center;
+
+  .sign-in-container {
+    width: 33.33%;
+    min-width: 20rem;
+  }
+}

@@ -1,0 +1,7 @@
+.small-container {
+  @include component-container;
+
+  .action-btn {
+    @include button($border, $paddingSmallButton);
+  }
+}

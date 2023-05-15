@@ -1,0 +1,88 @@
+.navbar {
+  box-shadow: $box-shadow;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $themeBackground;
+  transition: $transition;
+
+  @include breakpoint-md-down {
+    justify-content: left;
+  }
+
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $breakpoint-lg;
+    padding: 1rem;
+
+    @include breakpoint-md-down {
+      display: block;
+      padding: 0;
+    }
+
+    .nav-links,
+    .theme-btn {
+      @include link;
+      cursor: pointer;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      display: block;
+      padding: 0.5rem 1rem;
+      border: 0;
+
+      @include breakpoint-md-down {
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+    @include breakpoint-md-down {
+      padding: 1rem;
+    }
+  }
+
+  .nav-toggle {
+    @include button($noBorder, $noPadding, $fontSizeSmallButton);
+    font-size: 1.5rem;
+    display: none;
+
+    @include breakpoint-md-down {
+      display: block;
+    }
+  }
+
+  .links-container {
+    height: 0;
+    overflow: hidden;
+    transition: $transition;
+
+    @include breakpoint-md-up {
+      height: auto !important;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+
+      @include breakpoint-md-down {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// Mobile-first (1000px, 767px, 576px)
+@mixin breakpoint-xmd-up {
+  @media screen and (min-width: $breakpoint-xmd) {
+    @content;
+  }
+}
+
+@mixin breakpoint-md-up {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin breakpoint-sm-up {
+  @media screen and (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+// Desktop-first (1000px, 767px, 576px)
+@mixin breakpoint-xmd-down {
+  @media screen and (max-width: $breakpoint-xmd) {
+    @content;
+  }
+}
+
+@mixin breakpoint-md-down {
+  @media screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin breakpoint-sm-down {
+  @media screen and (max-width: $breakpoint-sm) {
+    @content;
+  }
+}

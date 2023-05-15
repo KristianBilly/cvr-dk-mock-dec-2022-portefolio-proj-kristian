@@ -1,0 +1,14 @@
+@mixin inherits-for-theme {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}
+
+@mixin link {
+  @include inherits-for-theme;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-color;
+  }
+}

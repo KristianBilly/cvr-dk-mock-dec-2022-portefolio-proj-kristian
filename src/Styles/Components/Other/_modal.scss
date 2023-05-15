@@ -1,0 +1,35 @@
+.modal {
+  .modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .modal-container {
+    @include flex-col-gap-1rem;
+    color: $themeFontAndBorder;
+    background-color: $themeBackground;
+    padding: 2rem;
+    border: $border;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .modal-btn {
+    flex: 0 0 calc(50% - 1rem);
+    @include button($border, $paddingSmallButton, $fontSizeMediumButton);
+    margin-top: 1rem;
+  }
+}

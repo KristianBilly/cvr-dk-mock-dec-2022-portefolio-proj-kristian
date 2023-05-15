@@ -1,0 +1,17 @@
+@mixin button(
+  $borderParam: $border,
+  $paddingParam: 0,
+  $fontSizeParam: inherit
+) {
+  @include inherits-for-theme;
+  font-family: inherit;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: $borderParam;
+  padding: $paddingParam;
+  font-size: $fontSizeParam;
+
+  &:hover {
+    color: $hover-color;
+  }
+}

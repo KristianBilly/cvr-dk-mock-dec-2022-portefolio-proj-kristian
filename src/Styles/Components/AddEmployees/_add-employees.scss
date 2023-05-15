@@ -1,0 +1,57 @@
+.add-employess {
+  @include component-container;
+
+  .swap-btn {
+    @include button(none, none, 0.9rem);
+    text-align: right;
+  }
+  
+.container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+
+    @include breakpoint-md-down {
+      flex-direction: column;
+      width: 80%;
+    }
+  }
+
+  .form-container {
+    flex: 0 0 40%;
+    border: $border;
+  }
+
+  .add-employee-table {
+    width: 100%;
+
+    .remove-btn {
+      @include button($noBorder);
+    }
+
+    td:first-child,
+    th:first-child {
+      text-align: left;
+      padding-left: 1rem;
+    }
+
+    .employees-table {
+      width: 100%;
+      border: $border;
+      text-align: center;
+      line-height: 1.75rem;
+    }
+
+    .text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border: $border;
+    }
+
+    .no-employees {
+      padding: 1rem;
+    }
+  }
+}

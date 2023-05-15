@@ -1,0 +1,20 @@
+@mixin flex-col-gap-1rem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@mixin center-component {
+  width: 90vw;
+  max-width: $breakpoint-xmd;
+}
+
+@mixin component-container {
+  @include center-component;
+  @include flex-col-gap-1rem;
+  align-items: center;
+  min-height: 200px;
+  padding: 2.5rem;
+  box-shadow: $box-shadow;
+  margin: 1rem 0;
+}
